@@ -1,0 +1,44 @@
+function main
+beginparams
+endparams
+beginlocals
+	integer index,
+	integer inner_index,
+	integer temp,
+	integer array this_array[5]
+endlocals
+beginbody
+	this_array[0] := 4;
+	this_array[1] := 3;
+	this_array[2] := 2;
+	this_array[3] := 1;
+	this_array[4] := 0;
+	
+	index := 0;
+	while (index < 4) beginbody
+		while (inner_index < (4-index)) beginbody
+
+			if (this_array[inner_index] > this_array[inner_index + 1]) then
+				temp := this_array[inner_index];
+				this_array[inner_index] := this_array[inner_index+1];
+				this_array[inner_index+1] := temp;
+			endif;
+			inner_index := inner_index + 1;
+
+		endbody;
+		inner_index := 0;
+		index := index + 1;
+	endbody;
+write : this_array[0];
+write : this_array[1];
+write : this_array[2];
+write : this_array[3];
+write : this_array[4];
+
+
+
+
+
+
+
+endbody	

@@ -1,0 +1,15 @@
+function main
+beginparams
+endparams
+beginlocals
+	integer i,
+	integer n
+endlocals
+beginbody
+	read: n;
+	i := 0;
+	while ( i < n ) beginbody
+		write: i;
+		i := i + 1;	
+	endbody;
+endbody

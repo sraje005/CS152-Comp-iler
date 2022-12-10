@@ -1,0 +1,10 @@
+function main
+beginparams
+endparams
+beginlocals
+	integer x,
+	integer x
+endlocals
+beginbody
+	x := 0;
+endbody

@@ -1,0 +1,26 @@
+function main
+beginparams
+endparams
+beginlocals
+	integer x,
+	integer y,
+	integer r
+endlocals
+beginbody
+	read: x;
+	read: y;
+	
+
+	if ( x >= y ) then
+		if ( x == y ) then
+			r := 0;
+			write: r;
+		else
+			r := 1;
+                	write: r;
+		endif;
+	else
+		r := 2;
+		write: r;
+	endif;
+endbody

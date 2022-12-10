@@ -1,0 +1,32 @@
+function funcOne 
+beginparams
+	integer param1,
+        integer param2,
+        integer param3
+endparams 
+beginlocals
+	integer var
+endlocals
+beginbody
+	var := param1 + param2 + param3;
+
+	return var;
+endbody
+
+function main
+beginparams
+endparams
+beginlocals
+        integer var1,
+        integer var2,
+        integer var3,
+	integer var4
+endlocals
+beginbody
+        read: var1;
+        read: var2;
+        read: var3;
+        var4 := funcOne(integer var1, integer var2, integer var3);
+
+	write : var4;
+endbody

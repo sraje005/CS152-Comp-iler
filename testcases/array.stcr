@@ -1,0 +1,29 @@
+function main
+beginparams
+endparams
+beginlocals
+	integer b,
+	integer c,
+	integer k,
+	integer array mya[5]
+
+endlocals
+
+beginbody	
+  read: mya[0];
+  k := mya[0];
+  b := 2;
+  c := 4;
+
+  mya[1] := k * 2;
+  mya[2] := mya[0] + (mya[1]);
+  mya[3] := mya[2] + k;
+  mya[c] := k * 5;
+
+  write: mya[0];
+  write: mya[1+0];
+  write: mya[b];
+  write: mya[3];
+  write: mya[c]; 
+endbody
+

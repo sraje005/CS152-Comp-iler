@@ -1,0 +1,9 @@
+function notmain
+beginparams
+endparams
+beginlocals
+	integer x
+endlocals
+beginbody
+	x := 0;
+endbody
